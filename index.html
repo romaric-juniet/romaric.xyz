@@ -4,14 +4,29 @@
         <meta charset="utf-8">
         <title>Romaric Juniet, software engineer</title>
         <meta content="Hi, I'm a software engineer living in Singapore. I currently work as engineering manager for the blockchain project Request" name="description">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <style type="text/css">
             body {
                 font-family: 'Roboto Mono', sans-serif;
+                font-size: 15px;
+                line-height: 25px;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
             }
-            .content {
-                padding: 10vw;
+            .row1, .row2 {
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+            .content-top {
+                padding-top: 10vw;
+                padding-left: 10vw;
                 max-width: 500px;
             }
             .title {
@@ -20,6 +35,7 @@
             }
             .intro {
                 color:rgba(0, 0, 0, .7);
+                letter-spacing: 0.03em;
             }
             .links {
                 display: flex;
@@ -55,31 +71,94 @@
             .pgp {
                 color:rgba(0, 0, 0, .7);
             }
+            .content-bottom {                
+                max-width: 900px;    
+                padding-top: 10vw;
+                padding-left: 10vw;            
+                display: flex;                
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+            .photo {
+                margin-top: 10vw;
+                width: 200px;
+                height: 200px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: 100px;
+                background-image: url("Romaric Juniet.png");
+            }
+            .articles {
+                margin-right: 40px;
+            }
+            a, a:visited, a:hover, a:active {
+                color: inherit;
+                text-decoration: none;
+                font-weight: bolder;
+            }
+            @media screen and (max-width: 900px) {
+                .photo {
+                    visibility: hidden;
+                    display: none;
+                }
+                .content {
+                    padding-top: 5vw;
+                    padding-left: 5vw;
+                    max-width: 500px;
+                }
+            }
         </style>
-        <div class="content">
-            <div class="title">
-                romaric juniet
+        <div class="row1">
+            <div class="content-top">
+                <div class="title">
+                    Romaric Juniet
+                </div>
+                <div class="intro">
+                    Hi, I'm a software engineer living in Singapore. I currently work as engineering manager for the blockchain project Request.
+                    I spend my free time doing photography, timelapses, reading, and building startups.
+                </div>
+                <ul class="links">
+                    <li class="link">twitter</li>
+                    <li class="link">github</li>
+                    <li class="link">telegram</li>
+                    <li class="link">ig</li>
+                    <li class="link">linkedin</li>
+                    <li class="link">keybase</li>
+                    <li class="link">500px</li>
+                    <li class="link">Instagram</li>
+                    <li class="link">YouTube</li>
+                    <li class="link">CodePen</li>
+                    <li class="link">goodreads</li>
+                        
+                </ul>
+                <div class="pgp">
+                    <a href="https://keybase.io/romaricjuniet" target="_blank">PGP key</a>
+                </div>
             </div>
-            <div class="intro">
-                Hi, I'm a software engineer living in Singapore. I currently work as engineering manager for the blockchain project Request.
-                I spend my free time doing photography, timelapses, reading, and building startups.
-            </div>
-            <ul class="links">
-                <li class="link">twitter</li>
-                <li class="link">github</li>
-                <li class="link">telegram</li>
-                <li class="link">ig</li>
-                <li class="link">linkedin</li>
-                <li class="link">keybase</li>
-                <li class="link">500px</li>
-                <li class="link">Instagram</li>
-                <li class="link">YouTube</li>
-                <li class="link">CodePen</li>
-                <li class="link">goodreads</li>
-                    
-            </ul>
-            <div class="pgp">
-                PGP
+            <div class="photo"></div>
+        </div>
+        <div class="row2">
+            <div class="content-bottom">
+                <div class="articles">
+                    <div class="title">
+                        Recent Articles
+                    </div>
+                    https://blog.request.network/request-version-2-0-mainnet-released-f5ab0dde9a5d
+                    https://blog.request.network/request-version-2-0-testnet-beta-release-60c35b7546e5
+                    https://blog.request.network/request-protocol-version-2-alpha-release-by-romaric-juniet-78f4153be4d5
+                    https://blog.request.network/request-network-protocol-version-2-51e562bf7e0d
+                </div>
+                <div class="projects">
+                    <div class="title">
+                        Recent Projects
+                    </div>
+                    https://github.com/RequestNetwork/requestNetwork
+                    https://github.com/romaric-juniet/romaric.xyz
+                    https://github.com/romaric-juniet/hotspot.sg
+                    https://github.com/romaric-juniet/traffic-camera-scrapper
+                    https://github.com/romaric-juniet/timeslide
+                </div>
             </div>
         </div>
     </body>
