@@ -60,6 +60,11 @@
                 -ms-flex-align: start;
                 align-items: flex-start;
             }
+            .link-block {                            
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
             .link {
                 display: flex;
 
@@ -71,6 +76,10 @@
                 flex: 0 0 33.33%;
                 -webkit-flex: 0 0 33.33%;
                 -ms-flex: 0 0 33.33%;
+            }
+            .social-icon {
+                margin-right: 5px;
+                height: 15px;
             }
             .pgp {
                 color:rgba(0, 0, 0, .7);
@@ -133,17 +142,16 @@
                     I spend my free time doing photography, timelapses, reading, and building startups.
                 </div>
                 <ul class="links">
-                    <li class="link">twitter</li>
-                    <li class="link">github</li>
-                    <li class="link">telegram</li>
-                    <li class="link">ig</li>
-                    <li class="link">linkedin</li>
-                    <li class="link">keybase</li>
-                    <li class="link">500px</li>
-                    <li class="link">Instagram</li>
-                    <li class="link">YouTube</li>
-                    <li class="link">CodePen</li>
-                    <li class="link">goodreads</li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg" class="social-icon" />twitter</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" class="social-icon" />github</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/telegram.svg" class="social-icon" />telegram</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" class="social-icon" />linkedin</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/keybase.svg" class="social-icon" />keybase</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/500px.svg" class="social-icon" />500px</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" class="social-icon" />Instagram</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/youtube.svg" class="social-icon" />YouTube</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/codepen.svg" class="social-icon" />CodePen</div></li>
+                    <li class="link"><div class="link-block"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/goodreads.svg" class="social-icon" />goodreads</div></li>
                         
                 </ul>
                 <div class="pgp">
